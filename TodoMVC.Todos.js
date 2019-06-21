@@ -1,12 +1,11 @@
 TodoMVC.module('Todos', function (Todos, App, Backbone, Marionette, $, _) {
 
     // Local Variables
-    // ---------------
 
     var localStorageKey = 'todos-backbone-marionettejs';
 
     // Todo Model
-    // ----------
+
 
     Todos.Todo = Backbone.Model.extend({
         localStorage: new Backbone.LocalStorage(localStorageKey),
@@ -33,7 +32,6 @@ TodoMVC.module('Todos', function (Todos, App, Backbone, Marionette, $, _) {
     });
 
     // Todo Collection
-    // ---------------
 
     Todos.TodoList = Backbone.Collection.extend({
         model: Todos.Todo,
